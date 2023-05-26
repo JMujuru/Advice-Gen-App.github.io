@@ -87,7 +87,7 @@ body {
 
 
 .divider {
-  background-image: url("../images/pattern-divider-mobile.svg");
+  background-image: url("images/pattern-divider-mobile.svg");
   background-position: center;
   background-repeat: no-repeat;
   height: 2rem;
@@ -141,7 +141,7 @@ body {
   }
 
   .divider {
-    background-image: url("../images/pattern-divider-desktop.svg");
+    background-image: url("images/pattern-divider-desktop.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
