@@ -1,0 +1,174 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%)
+
+## Typography
+
+### Body Copy
+
+- Font size (quote): 28px
+
+### Font
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800
+
+
+ */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  width: 350px;
+  height: 325px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 1rem;
+  margin-bottom: 8rem;
+  text-align: center;
+  position: relative;
+  overflow-wrap: break-word;
+}
+
+.advice-title {
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding-top: 1rem;
+}
+
+.advice {
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+
+
+.divider {
+  background-image: url("../images/pattern-divider-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 2rem;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 4rem;
+}
+
+
+.dice-container {
+  background-color: hsl(150, 100%, 66%);
+  display: inline-block;
+  height: 24px;
+  padding: 1rem 1rem 40px 1rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -1.8rem;
+  right: 9rem;
+}
+
+.dice-container:hover {
+  box-shadow: 0rem 0rem 2rem hsl(150, 100%, 66%);
+  cursor: pointer;
+}
+
+.dice-container:active {
+  box-shadow: 0rem 0rem 2rem hsl(150, 88%, 30%);
+}
+
+.dice {
+  width: 24px;
+  height: 24px;
+}
+
+
+@media all and (min-width: 800px) {
+  .main {
+    width: 560px;
+    position: relative;
+  }
+
+  .advice-title {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+  }
+
+  .advice {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .divider {
+    background-image: url("../images/pattern-divider-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  .dice-container {
+    position: absolute;
+    bottom: -2rem;
+    right: 15.7rem;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
